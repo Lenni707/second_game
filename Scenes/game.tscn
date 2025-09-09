@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://bgsd8lom3mdvc"]
+[gd_scene load_steps=6 format=3 uid="uid://bgsd8lom3mdvc"]
 
 [ext_resource type="PackedScene" uid="uid://bxoiccd7dwfgy" path="res://Scenes/player.tscn" id="1_ebmjs"]
 [ext_resource type="Texture2D" uid="uid://cve0ebrhmmulm" path="res://Assets/world_tileset.png" id="1_qxrlw"]
+[ext_resource type="PackedScene" uid="uid://csax7vps5pl4m" path="res://Scenes/killzone.tscn" id="3_wrm1d"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_wrm1d"]
 texture = ExtResource("1_qxrlw")
@@ -175,3 +176,6 @@ layer_0/tile_data = PackedInt32Array(65534, 0, 0, 65535, 0, 0, 0, 0, 0, 1, 0, 0,
 [node name="Camera2D" type="Camera2D" parent="player"]
 offset = Vector2(0, -20)
 zoom = Vector2(4.865, 4.865)
+
+[node name="killzone" parent="." instance=ExtResource("3_wrm1d")]
+position = Vector2(0, 81)
